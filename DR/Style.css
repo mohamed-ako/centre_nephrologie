@@ -125,6 +125,7 @@ h1 {
   background-color: var(--background);
   border-radius: 22px;
   color: rgb(224, 224, 224);
+  direction: rtl;
 }
 .NavBar nav > div {
   width: 70%;
@@ -149,6 +150,9 @@ h1 {
 }
 .NavBar span a {
   color: #000;
+}
+.NavBar nav > div > *:hover {
+  text-shadow: 0 0 10px white;
 }
 
 .NavBar article {
@@ -211,6 +215,7 @@ h1 {
 }
 .NavBar button:hover {
   background-color: #ffffffad;
+  box-shadow: 0 0 10px white !important;
   border-radius: 50%;
   transition: 1s;
 }
@@ -312,13 +317,9 @@ h1 {
   padding: 20px;
 }
 
-.Home main li {
-  text-align: end;
-  text-decoration: none;
-}
 .Home main div {
   display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
   height: 70%;
@@ -333,11 +334,11 @@ h1 {
   width: 35%;
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 .Home .right {
-  width: 65%;
+  width: 60%;
   display: flex;
   flex-flow: column;
   justify-content: start;
@@ -348,8 +349,9 @@ h1 {
   /* filter: sepia(0.33) saturate(0.8) brightness(1.4) contrast(3); */
   /* filter: sepia(0.33) saturate(0.8) brightness(1.4) contrast(3) grayscale(0.17)
     hue-rotate(360deg); */
-  position: absolute; /* Needed for absolute positioning of the animation */
+  position: relative; /* Needed for absolute positioning of the animation */
   animation: image-animation 2s ease-in-out forwards; /* Animation declaration */
+  z-index: 999;
 }
 .Home button {
   width: 200px;
@@ -407,30 +409,27 @@ h1 {
 }
 
 .Services .imgs img {
-  height: 100%;
+  height: 100% !important;
+
   width: 100%;
   border-radius: 500px 10px 10px 500px;
   box-shadow: -20px 20px 18px 16px rgba(0, 0, 0, 0.24);
-  /* border-radius: 10px 370px 10px 370px; */
 }
-.Services .imgs img:hover {
-  /* position: absolute !important;
-  border-radius: 10px;
-  top: 6vh;
-  left: 10vw;
-  right: 10vw; */
+/* .Services .imgs img:hover {
   border-radius: 10px;
   animation: 1s;
   z-index: 9999;
   width: 100%;
   height: 100% !important;
-}
+} */
 .Services .imgs .active {
+  /* position: absolute; */
   border-radius: 10px;
   animation: 1s;
-  z-index: 9999;
-  width: 100%;
-  height: 100% !important;
+  /* z-index: 9999; */
+  width: 100vw;
+  background-color: black !important;
+  height: 82vh !important;
 }
 .Services .imgs:hover,
 .Services .imgs:active {
@@ -442,8 +441,8 @@ h1 {
   width: 50%;
   transition: 1s;
   /* animation: 1s; */
-  z-index: 999;
-  height: 100%;
+  /* z-index: 999; */
+  /* height: 50%; */
 }
 .Services .imgs {
   width: 40%;
@@ -478,16 +477,19 @@ h1 {
 .Services .buttons {
   outline: none;
   border: none;
-  position: relative;
+  position: sticky;
   width: 100%;
-  height: 0px;
+  height: 80%;
+
+  /* height: 0px; */
   left: 0;
-  bottom: 50%;
+  bottom: 50vh;
+  /* top: 50%; */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  z-index: 99999;
+  z-index: 999999;
 }
 
 .Services main {
@@ -505,13 +507,11 @@ h1 {
   transition: 0.4s;
   overflow: hidden;
   color: var(--title-color);
-  /* animation: 2s about-animation ease-in-out; */
 }
 
 .Services main:hover {
   height: 254px;
   overflow: scroll;
-  /* color: var(--text-color) !important; */
   transform: skew(0deg);
 }
 
@@ -660,7 +660,11 @@ h1 {
 }
 .About article button {
   outline: none;
-  border: none;
+  height: 50px;
+  width: 80px;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid white;
   background-color: #00000000;
 }
 .About article button:hover {
@@ -1156,7 +1160,7 @@ textarea {
     transform: scale(1.5) translateX(0); /* Grow to 120% size at the halfway point */
   }
   100% {
-    transform: scale(1) translateX(-30vw); /* Shrink to 80% size and move left by 50px at the end */
+    transform: scale(1) translateX(3vw); /* Shrink to 80% size and move left by 50px at the end */
   }
 }
 @keyframes images-animation {
@@ -1316,19 +1320,50 @@ textarea {
   }
 
   .Home img {
-    width: 25%;
+    width: 100%;
   }
   /* .imgdiv{
     background-color: #fff;
     border: solid 1px #000000;
     
   } */
-  .Home div {
+  .Home > div {
+    display: flex;
+    flex-flow: column nowrap !important;
+    justify-content: start !important;
+    margin-top: 0px !important;
+    box-sizing: content-box;
+  }
+  .Home .left {
+    height: 35% !important;
+    width: 50%;
+    /* border: 2px solid black !important; */
+  }
+  .Home .right {
+    box-sizing: content-box;
+    width: 100%;
+    height: 60% !important;
+    /* border: 2px solid rgb(0, 255, 47) !important; */
     display: flex;
     flex-flow: column;
-    justify-content: start;
-    margin-top: 0px !important;
+    /* background-color: red !important; */
+    justify-content: start !important;
+    align-items: center;
+    box-sizing: content-box;
   }
+  .Home main > div {
+    /* background-color: #3b5998 !important; */
+    height: 50% !important ;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around !important;
+  }
+  .Home .right p {
+    display: block;
+    /* height: 10px !important; */
+    box-sizing: content-box;
+  }
+
   .Home > div,
   .About > div,
   .Services > div,
@@ -1355,7 +1390,7 @@ textarea {
   } */
   .Home h1 {
     animation: title-animation 2.3s linear;
-    margin-top: 100px !important;
+    /* margin-top: 100px !important; */
     font-size: large !important;
   }
 
@@ -1367,12 +1402,9 @@ textarea {
     width: 90px !important;
     height: 40px !important;
     font-size: 16px !important;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
-  .Home .left {
-    width: 100%;
-    height: auto;
-  }
+
   .NavBar {
     width: 98vw !important;
     /* height: 20px; */

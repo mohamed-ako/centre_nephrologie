@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./Style.css";
 
-export default function Services({images}) {
+export default function Services({ images }) {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
   const [btnActive, setbtnActive] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [intervalId, setIntervalId] = useState(null); // Add state for interval ID
-
-
 
   const handleDecrement = () => {
     setCurrentImgIndex((prevIndex) =>
@@ -96,27 +94,27 @@ export default function Services({images}) {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     {" "}
                     <path
                       d="M19 4L11 12L19 20"
                       stroke="#ffffff"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>{" "}
                     <path
                       d="M13 4L5 12L13 20"
                       stroke="#ffffff"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>{" "}
                   </g>
                 </svg>
@@ -134,27 +132,27 @@ export default function Services({images}) {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     {" "}
                     <path
                       d="M5 4L13 12L5 20"
                       stroke="#ffffff"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>{" "}
                     <path
                       d="M11 4L19 12L11 20"
                       stroke="#ffffff"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>{" "}
                   </g>
                 </svg>
@@ -167,18 +165,18 @@ export default function Services({images}) {
           <h1>لماذا نحن ؟</h1>
 
           <main className="teams">
-            <div class="img-content">
+            <div className="img-content">
               <svg
                 fill="#ffffff"
                 viewBox="0 0 24 24"
                 // xmlns="http://www.w3.org/2000/svg"
                 stroke="#ffffff"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
@@ -186,19 +184,16 @@ export default function Services({images}) {
                 </g>
               </svg>
 
-              {/* <div class="content"> */}
               <h3>الخدمة الفنية للأجهزة</h3>
             </div>
             <p>
-              نوفر خدمةالصيانة وتشغيل الأجهزة والمعدات الطبية بكفاءة عالية
+              نوفر خدمة الصيانة وتشغيل الأجهزة والمعدات الطبية بكفاءة عالية
               وباستخدام أحدث التقنيات. يعمل فريق الفنيين المؤهلين على ضمان
               استمرارية عمل المعدات بكفاءة ودقة
             </p>
-            {/* </div> */}
-            {/* </div> */}
           </main>
-          <main className="teams">
-            <div class="img-content">
+          {/* <main className="teams">
+            <div className="img-content">
               <h3>
                 <svg
                   fill="#ffffff"
@@ -206,11 +201,11 @@ export default function Services({images}) {
                   // xmlns="http://www.w3.org/2000/svg"
                   stroke="#ffffff"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     <path d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h16c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm144-248c0 4.4-3.6 8-8 8h-56v56c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8v-56h-56c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h56v-56c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v56h56c4.4 0 8 3.6 8 8v48zm176 248c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z"></path>
@@ -225,9 +220,9 @@ export default function Services({images}) {
               وسائل النقل الملائمة لنقل المرضى من وإلى المركز وبين المواقع
               الطبية الأخرى بمرافقة سائق مدرب ومؤهل
             </p>
-          </main>
+          </main> */}
           <main className="teams">
-            <div class="img-content">
+            <div className="img-content">
               <h3>
                 <svg
                   viewBox="0 0 24 24"
@@ -235,11 +230,11 @@ export default function Services({images}) {
                   fill="#ffffff"
                   stroke="#ffffff"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     {" "}
@@ -255,18 +250,16 @@ export default function Services({images}) {
             </div>
 
             <p>
-              .يقدم الرعاية الطبية والدعم للمرضى أثناء جلسات العلاج والفحوصات
+            يقدم الرعاية الطبية والدعم للمرضى أثناء جلسات العلاج والفحوصات
             </p>
             <p>
-              . تقنيون يعملون على صيانة وإصلاح الأجهزة الطبية والتقنية بدقة
+               تقنيون يعملون على صيانة وإصلاح الأجهزة الطبية والتقنية بدقة
               وفعالية
             </p>
-
-            <p>.سائق يضمن نقل المرضى بأمان وفقًا للجدول الزمني المحدد</p>
           </main>
 
           <main className="teams">
-            <div class="img-content">
+            <div className="img-content">
               <h3>
                 <svg
                   fill="#ffffff"
@@ -278,11 +271,11 @@ export default function Services({images}) {
                   // xml:space="preserve"
                   stroke="#ffffff"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     {" "}
@@ -299,7 +292,7 @@ export default function Services({images}) {
                     </g>{" "}
                   </g>
                 </svg>
-                ممرضون متعددو التخصصات
+                مقدمو العلاج
               </h3>
             </div>
             <p>
@@ -308,7 +301,7 @@ export default function Services({images}) {
             </p>
           </main>
           <main className="teams">
-            <div class="img-content">
+            <div className="img-content">
               <h3>
                 <svg
                   fill="#ffffff"
@@ -322,11 +315,11 @@ export default function Services({images}) {
                   // xml:space="preserve"
                   stroke="#ffffff"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     {" "}
@@ -350,7 +343,7 @@ export default function Services({images}) {
               </h3>
             </div>
             <p>
-              .تتمتع عيادة تصفية الدم لدينا بأحدث التقنيات والأجهزة المتطورة
+              تتمتع عيادة تصفية الدم لدينا بأحدث التقنيات والأجهزة المتطورة
               لتنفيذ العمليات بكفاءة ودقة عالية. نحن ملتزمون بتوفير أفضل الخدمات
               والرعاية لمرضانا، ونضمن جودة الخدمات من خلال استخدام أحدث التقنيات
               في مجال تصفية الدم
