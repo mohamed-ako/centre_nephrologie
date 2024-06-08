@@ -1,12 +1,8 @@
-import React, { useState, useEffect,useCallback, useRef } from "react";
-import {
-
-  Link,
-  useNavigate,
-} from "react-router-dom";
+import React, { useState, useEffect, useCallback, useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import "./Style.css";
-export default function NavBar(){
+export default function NavBar() {
   const [Light, setLight] = useState(false);
   const [currentPage, setCurrentPage] = useState("/"); // Initial current page is Home
   const navigate = useNavigate(); // Hook for navigation
@@ -73,9 +69,9 @@ export default function NavBar(){
       if (Math.abs(diffX) > 50) {
         // Adjust this threshold as needed
         if (diffX > 0) {
-          navigateToNextPage();
-        } else {
           navigateToPreviousPage();
+        } else {
+          navigateToNextPage();
         }
         startX.current = null;
       }
@@ -190,29 +186,29 @@ export default function NavBar(){
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
                   <g
-                    clip-path="url(#a)"
+                    clipPath="url(#a)"
                     stroke="#FFFFFF"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
+                    strokeWidth="1.5"
+                    strokeMiterlimit="10"
                   >
                     {" "}
                     <path
                       d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"
                       fill="#FFFFFF"
-                      fill-opacity=".16"
+                      fillOpacity=".16"
                     ></path>{" "}
                     <path
                       d="M3 12H1M23 12h-2M12 21v2M12 1v2M5.636 18.364l-1.414 1.414M19.778 4.222l-1.414 1.414M5.636 5.636 4.222 4.222M19.778 19.778l-1.414-1.414"
-                      stroke-linecap="round"
+                      strokeLinecap="round"
                     ></path>{" "}
                   </g>{" "}
                   <defs>
@@ -230,11 +226,11 @@ export default function NavBar(){
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#FFFFFFf"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
@@ -255,19 +251,18 @@ export default function NavBar(){
       </nav>
 
       <main>
-        <button className="prev" onClick={navigateToNextPage}>
+        <button className="prev" onClick={navigateToPreviousPage}>
           <svg
             fill="#FFFFFF"
             viewBox="-1 0 19 19"
             xmlns="http://www.w3.org/2000/svg"
-            class="cf-icon-svg"
             stroke="#FFFFFFf"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               <path d="M15.3 15.32a1.026 1.026 0 0 1-.727-.302L8.5 8.946l-6.073 6.072a1.03 1.03 0 0 1-1.456-1.455l6.801-6.8a1.03 1.03 0 0 1 1.456 0l6.8 6.8a1.03 1.03 0 0 1-.727 1.757z"></path>
@@ -277,14 +272,13 @@ export default function NavBar(){
             fill="#FFFFFF"
             viewBox="-1 0 19 19"
             xmlns="http://www.w3.org/2000/svg"
-            class="cf-icon-svg"
             stroke="#FFFFFFf"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               <path d="M15.3 15.32a1.026 1.026 0 0 1-.727-.302L8.5 8.946l-6.073 6.072a1.03 1.03 0 0 1-1.456-1.455l6.801-6.8a1.03 1.03 0 0 1 1.456 0l6.8 6.8a1.03 1.03 0 0 1-.727 1.757z"></path>
@@ -292,19 +286,18 @@ export default function NavBar(){
           </svg>
         </button>
 
-        <button className="next" onClick={navigateToPreviousPage}>
+        <button className="next" onClick={navigateToNextPage}>
           <svg
             fill="#FFFFFF"
             viewBox="-1 0 19 19"
             xmlns="http://www.w3.org/2000/svg"
-            class="cf-icon-svg"
             stroke="#FFFFFFf"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               <path d="M8.5 15.313a1.026 1.026 0 0 1-.728-.302l-6.8-6.8a1.03 1.03 0 0 1 1.455-1.456L8.5 12.828l6.073-6.073a1.03 1.03 0 0 1 1.455 1.456l-6.8 6.8a1.026 1.026 0 0 1-.728.302z"></path>
@@ -315,14 +308,13 @@ export default function NavBar(){
             fill="#FFFFFF"
             viewBox="-1 0 19 19"
             xmlns="http://www.w3.org/2000/svg"
-            class="cf-icon-svg"
             stroke="#FFFFFFf"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               <path d="M8.5 15.313a1.026 1.026 0 0 1-.728-.302l-6.8-6.8a1.03 1.03 0 0 1 1.455-1.456L8.5 12.828l6.073-6.073a1.03 1.03 0 0 1 1.455 1.456l-6.8 6.8a1.026 1.026 0 0 1-.728.302z"></path>
@@ -332,4 +324,4 @@ export default function NavBar(){
       </main>
     </div>
   );
-};
+}

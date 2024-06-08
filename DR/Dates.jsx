@@ -4,13 +4,13 @@ export default function Dates() {
   return (
     <div className="Dates">
       <div>
-        <h1>توقيت عمل العيادة</h1>
+        <h1>مواقيت العمل</h1>
         <table>
           <thead>
             <tr>
               <th className="frist">اليوم</th>
-              <th>وقت الفتح</th>
-              <th className="last">وقت الإغلاق</th>
+              <th>الدخول</th>
+              <th className="last">الخروج</th>
             </tr>
           </thead>
           <tbody>

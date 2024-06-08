@@ -9,18 +9,18 @@ export default function About() {
         <h1>نبذة عنا</h1>
         <section>
           <article>
-            <div class="temporary_text">
+            <div className="temporary_text">
               <svg
                 fill="#ffffff"
                 viewBox="0 0 96 96"
                 xmlns="http://www.w3.org/2000/svg"
                 stroke="#ffffff"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
@@ -40,20 +40,20 @@ export default function About() {
                 </g>
               </svg>
             </div>
-            <div class="card_content">
-              <span class="card_title">تاريخ العيادة</span>
-              {/* <span class="card_subtitle">
+            <div className="card_content">
+              <span className="card_title">تاريخ المركز</span>
+              {/* <span className="card_subtitle">
                 تأسيس عيادة تصفية الكلى علي علاش
               </span> */}
-              <p class="card_description">
-                أسست عيادة تصفية الكلى "علي علاش" عام 2016 في مدينة الحسيمة، حيث
-                بدأت رحلتها في تقديم خدمات علاجية متخصصة لمرضى الكلى.
+              <p className="card_description">
+                أسس مركز تصفية الدَّم "علي علاش" عام 2016 بمدينة الحسيمة، الذي
+                بدأ رحلته في تقديم خدمات علاجية متخصصة لمرضى القصور الكلوي
               </p>
             </div>
           </article>
 
           <article>
-            <div class="temporary_text">
+            <div className="temporary_text">
               <svg
                 version="1.1"
                 id="Layer_1"
@@ -64,11 +64,11 @@ export default function About() {
                 // fill="#ffffff"
                 style={{ fill: "#ffffff" }}
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
@@ -114,32 +114,30 @@ export default function About() {
                 </g>
               </svg>
             </div>
-            <div class="card_content">
-              <div class="temporary_text"></div>
-              <span class="card_title">رؤيتنا</span>
-              {/* <span class="card_subtitle">
-              </span> */}
+            <div className="card_content">
+              <div className="temporary_text"></div>
+              <span className="card_title">رؤيتنا</span>
 
-              <p class="card_description">
-                نسعى إلى توفير رعاية صحية متميزة وشاملة لمرضى الكلى وذلك من خلال
+              <p className="card_description">
+                نسعى إلى توفير رعاية صحية متميزة وشاملة لمرضانا وذلك من خلال
                 توفير أحدث التقنيات والعلاجات برفقة فريق طبي متخصص ومؤهل
               </p>
             </div>
           </article>
 
           <article>
-            <div class="temporary_text">
+            <div className="temporary_text">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 stroke="#ffffff"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
@@ -147,62 +145,60 @@ export default function About() {
                     opacity="0.4"
                     d="M22 7.43018V13.4302C22 14.9302 21.5 16.1802 20.62 17.0602C19.75 17.9302 18.5 18.4302 17 18.4302V20.5602C17 21.3602 16.11 21.8402 15.45 21.4002L11 18.4302H8.88C8.96 18.1302 9 17.8202 9 17.5002C9 16.4802 8.61 15.5402 7.97 14.8302C7.25 14.0102 6.18 13.5002 5 13.5002C3.88 13.5002 2.86 13.9602 2.13 14.7102C2.04 14.3102 2 13.8802 2 13.4302V7.43018C2 4.43018 4 2.43018 7 2.43018H17C20 2.43018 22 4.43018 22 7.43018Z"
                     stroke="#ffffff"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>{" "}
                   <path
                     d="M9 17.5C9 18.25 8.79001 18.96 8.42001 19.56C8.21001 19.92 7.94 20.24 7.63 20.5C6.93 21.13 6.01 21.5 5 21.5C3.54 21.5 2.26999 20.72 1.57999 19.56C1.20999 18.96 1 18.25 1 17.5C1 16.24 1.58 15.11 2.5 14.38C3.19 13.83 4.06 13.5 5 13.5C7.21 13.5 9 15.29 9 17.5Z"
                     stroke="#ffffff"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>{" "}
                   <path
                     d="M3.43945 17.5L4.42944 18.49L6.55945 16.52"
                     stroke="#ffffff"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>{" "}
                   <path
                     d="M8.5 10.5H15.5"
                     stroke="#ffffff"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>{" "}
                 </g>
               </svg>
             </div>
-            <div class="card_content">
-              <span class="card_title">رسالتنا</span>
-              {/* <span class="card_subtitle"> */}
-              {/* </span> */}
+            <div className="card_content">
+              <span className="card_title">رسالتنا</span>
 
-              <p class="card_description">
-                نسعى جاهدين لتحسين نوعية حياة مرضى الكلى من خلال تقديم خدمات
-                طبية متميزة، والمساهمة في توعية المجتمع حول أمراض الكلى وطرق
-                الوقاية منها
+              <p className="card_description">
+                نسعى جاهدين لتحسين جودة حياة مرضنا من خلال تقديم خدمات طبية
+                متميزة، والمساهمة في توعية المجتمع حول أمراض الكلى وطرق الوقاية
+                منها
               </p>
             </div>
           </article>
 
           <article>
-            <div class="temporary_text">
+            <div className="temporary_text">
               <svg
                 viewBox="0 0 48 48"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
@@ -220,22 +216,20 @@ export default function About() {
               </svg>
             </div>
 
-            <div class="card_content">
-              <span class="card_title">الدكتور علاش زكرياء</span>
-              {/* <span class="card_subtitle">
-                نسعى جاهدين لتحسين نوعية حياة مرضى الكلى
-              </span> */}
+            <div className="card_content">
+              <span className="card_title">الدكتور علاش زكرياء</span>
 
-              <p class="card_description">
-                مدير و مؤسس مركز تصفية الكلى اختصاصي في أمراض غسيل الكلى، ويتمتع
-                بخبرة واسعة في مجالات مثل ارتفاع ضغط الدم، واعتلال الكلية
-                السكري، وأمراض الجهاز البولي، والكلية الاصطناعي
+              <p className="card_description">
+                مدير و مؤسس مركز تصفية الكلى اختصاصي في أمراض غسيل الدم، ويتمتع
+                بخبرة واسعة في مجالات راكمها اثناء مدة اشتغاله الطويلة في مستشفى
+                محمد الخامس بالحسيمة منذ سنة 1996 مثل ارتفاع ضغط الدم، واعتلال
+                الكلية السكري، وأمراض الجهاز البولي، والكلية الاصطناعي
               </p>
             </div>
           </article>
           {/* 
           <article>
-            <div class="temporary_text">
+            <div className="temporary_text">
               <svg
                 fill="#ffffff"
                 height="200px"
@@ -248,11 +242,11 @@ export default function About() {
                 // xml:space="preserve"
                 stroke="#ffffff"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
@@ -301,12 +295,12 @@ export default function About() {
                 </g>
               </svg>
             </div>
-            <div class="card_content">
-              <span class="card_title">فريق العمل</span>
-              <span class="card_subtitle">
+            <div className="card_content">
+              <span className="card_title">فريق العمل</span>
+              <span className="card_subtitle">
               </span>
 
-              <p class="card_description">
+              <p className="card_description">
                 <h1>
                 نضم فريقًا مؤهلاً ومتخصصًا يتكون من{" "}
 
@@ -332,69 +326,69 @@ export default function About() {
           </article> */}
 
           <article>
-            <div class="temporary_text">
+            <div className="temporary_text">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
                   <path
                     d="M22 9.00002V15C22 17.5 21.5 19.25 20.38 20.38L14 14L21.73 6.27002C21.91 7.06002 22 7.96002 22 9.00002Z"
                     stroke="#ffffff"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>{" "}
                   <path
                     d="M21.73 6.27L6.26999 21.73C3.25999 21.04 2 18.96 2 15V9C2 4 4 2 9 2H15C18.96 2 21.04 3.26 21.73 6.27Z"
                     stroke="#ffffff"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>{" "}
                   <path
                     d="M20.38 20.38C19.25 21.5 17.5 22 15 22H9.00003C7.96003 22 7.06002 21.91 6.27002 21.73L14 14L20.38 20.38Z"
                     stroke="#ffffff"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>{" "}
                   <path
                     d="M6.24002 7.97997C6.92002 5.04997 11.32 5.04997 12 7.97997C12.39 9.69997 11.31 11.16 10.36 12.06C9.67001 12.72 8.58003 12.72 7.88003 12.06C6.93003 11.16 5.84002 9.69997 6.24002 7.97997Z"
                     stroke="#ffffff"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                   ></path>{" "}
                   <path
                     d="M9.0946 8.69995H9.10359"
                     stroke="#ffffff"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>{" "}
                 </g>
               </svg>{" "}
             </div>
             <div
-              class="card_content"
+              className="card_content"
               onClick={() => {
                 setMap(true);
               }}
             >
-              <span class="card_title">موقع العيادة</span>
-              {/* <span class="card_subtitle">
+              <span className="card_title">موقع العيادة</span>
+              {/* <span className="card_subtitle">
               5 6 شارع عبد الله ابن ياسين - الحسيمة{" "}
               </span> */}
 
-              <p class="card_description">
-                65 شارع عبد الله ابن ياسين - الحسيمة{" "}
+              <p className="card_description">
+                شارع عبد الله ابن ياسين - الحسيمة 65
               </p>
               <button
                 onClick={() => {
@@ -430,19 +424,19 @@ export default function About() {
         )}
         {/* <div className="buttom">
           <main>
-            <div class="img-section">الفريق الطبي والموظفين</div>
-            <div class="cards">
-              <div class="card red">
-                <p class="tip">الدكتور علاش زكرياء</p>
-                <p class="second-text">
+            <div className="img-section">الفريق الطبي والموظفين</div>
+            <div className="cards">
+              <div className="card red">
+                <p className="tip">الدكتور علاش زكرياء</p>
+                <p className="second-text">
                   اختصاصي في أمراض الكلي، ويتمتع بخبرة واسعة في مجالات مثل
                   ارتفاع ضغط الدم، واعتلال الكلية السكري، وأمراض الجهاز البولي،
                   والكلية الاصطناعية{" "}
                 </p>
               </div>
-              <div class="card blue">
-                <p class="tip">فريق العمل</p>
-                <p class="second-text">
+              <div className="card blue">
+                <p className="tip">فريق العمل</p>
+                <p className="second-text">
                   <ol>
                     <li>06 مقدمي رعاية</li>
                     <li>02 فنيين</li>
@@ -452,9 +446,9 @@ export default function About() {
                 </p>
               </div>
 
-              <div class="card green">
-                <p class="tip">موقع العيادة</p>
-                <p class="second-text">
+              <div className="card green">
+                <p className="tip">موقع العيادة</p>
+                <p className="second-text">
                   5 6 شارع عبد الله ابن ياسين - الحسيمة{" "}
                 </p>
               </div>

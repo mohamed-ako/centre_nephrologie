@@ -56,12 +56,12 @@ export default function Contact() {
                 <th>الواتساب</th>
                 <td>+212 76 731 23 64</td>
               </tr>
-              <tr onClick={() => handleEmailClick("zallach@yahoo.fr")}>
+              {/* <tr onClick={() => handleEmailClick("zallach@yahoo.fr")}>
                 <th>بريد الطبيب</th>
                 <td>
                   <a href="mailto:zallach@yahoo.fr">zallach@yahoo.fr</a>
                 </td>
-              </tr>
+              </tr> */}
               <tr
                 onClick={() =>
                   handleEmailClick("centredialysealiallach016@gmail.com")
@@ -80,30 +80,30 @@ export default function Contact() {
             <p> تابعنا على الفيسبوك</p>
 
             {/* <a href="https://www.facebook.com/"> */}
-            <div class="tooltip-container">
-              <div class="tooltip">
-                <div class="profile">
-                  <div class="user">
-                    <div class="img">Fb</div>
-                    <div class="details">
-                      <div class="name">Ali Allach</div>
-                      <div class="username">@username</div>
+            <div className="tooltip-container">
+              <div className="tooltip">
+                <div className="profile">
+                  <div className="user">
+                    <div className="img">Fb</div>
+                    <div className="details">
+                      <div className="name">Ali Allach</div>
+                      <div className="username">@username</div>
                     </div>
                   </div>
-                  <div class="about">700+ Friends</div>
+                  <div className="about">700+ Friends</div>
                 </div>
               </div>
-              <div class="text">
+              <div className="text">
                 <a
-                  class="icon"
+                  className="icon"
                   href="https://www.facebook.com/profile.php?id=100054326748841"
                 >
-                  <div class="layer">
+                  <div className="layer">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    <span class="facebookSVG">
+                    <span className="facebookSVG">
                       <svg
                         viewBox="0 0 40 40"
                         // xml:space="preserve"
@@ -132,16 +132,16 @@ export default function Contact() {
                       </svg>
                     </span>
                   </div>
-                  <div class="text">Facebook</div>
+                  <div className="text">Facebook</div>
                 </a>
               </div>
             </div>
             {/* </a> */}
           </div>
         </main>
-        <main class="form-contact">
-          <form class="form" onSubmit={handleSubmit}>
-            <div class="form-group">
+        <main className="form-contact">
+          <form className="form" onSubmit={handleSubmit}>
+            <div className="form-group">
               <label for="name">إسمك</label>
               <input
                 placeholder="إسمك"
@@ -163,7 +163,7 @@ export default function Contact() {
                 onChange={handleChange}
               />
             </div>
-            <div class="form-group form-group-2">
+            <div className="form-group form-group-2">
               <label for="message">رسالتك</label>
               <textarea
                 placeholder="رسالتك"
@@ -178,7 +178,7 @@ export default function Contact() {
                 {" "}
               </textarea>
             </div>
-            <button type="submit" class="form-submit-btn">
+            <button type="submit" className="form-submit-btn">
               إرسال
             </button>
           </form>
